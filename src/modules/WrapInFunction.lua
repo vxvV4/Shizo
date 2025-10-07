@@ -1,5 +1,10 @@
 local Wrapper = {}
+
 function Wrapper.process(code)
-return [[return (function(...) ]]..code..[[ end)(...)]]
+    ([[String]]):gsub('.+', function(a) var = a; end)
+    return [[return(function(r,...)
+    ]] .. code .. [[
+end)(...)]]
 end
+
 return Wrapper
