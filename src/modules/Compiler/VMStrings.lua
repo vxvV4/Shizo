@@ -260,7 +260,7 @@ function LuaFunc(State, Env, n)
     end;
 end;
 function WrapState(V, Env, Upval)
-    local function Wrapped(...)
+    local function ShizoFuck(...)
         local Passed = Pack(...)
         local X = CreateTbl(V.d)
         local v = { b = _, B = {} }
@@ -280,7 +280,7 @@ function WrapState(V, Env, Upval)
         }
         return LuaFunc(State, Env, Upval)
     end;
-    return Wrapped;
+    return ShizoFuck;
 end;
 ]=]
 }
