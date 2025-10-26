@@ -14,39 +14,39 @@ config.settings = {
     },
     control_flow = {
         enabled = true,
-        max_fake_blocks = 6,
+        max_fake_blocks = 50,
     },
     StringToExpressions = {
-        enabled = true,
+        enabled = false,
         min_number_length = 100,
         max_number_length = 999,
     },
     string_encoding = {
-        enabled = true,
+        enabled = false,
     },
     WrapInFunction = {
         enabled = true,
     },
     variable_renaming = {
         enabled = true,
-        min_name_length = 8,
+        min_name_length = 20,
         max_name_length = 12,
     },
     garbage_code = {
         enabled = true,
-        garbage_blocks = 20,
+        garbage_blocks = 100,
     },
     opaque_predicates = {
         enabled = true,
     },
     function_inlining = {
-        enabled = true,
+        enabled = false,
     },
     dynamic_code = {
-        enabled = true,
+        enabled = false,
     },
     bytecode_encoding = {
-        enabled = true,
+        enabled = false,
     },
     compressor = {
         enabled = true,
