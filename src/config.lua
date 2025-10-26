@@ -14,7 +14,7 @@ config.settings = {
     },
     control_flow = {
         enabled = true,
-        max_fake_blocks = 50,
+        max_fake_blocks = 6,
     },
     StringToExpressions = {
         enabled = false,
@@ -29,12 +29,12 @@ config.settings = {
     },
     variable_renaming = {
         enabled = true,
-        min_name_length = 20,
+        min_name_length = 8,
         max_name_length = 12,
     },
     garbage_code = {
         enabled = true,
-        garbage_blocks = 100,
+        garbage_blocks = 20,
     },
     opaque_predicates = {
         enabled = true,
