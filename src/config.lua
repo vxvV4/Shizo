@@ -10,19 +10,19 @@ config.settings = {
         enabled = true,
     },
     antitamper = {
-        enabled = true,
+        enabled = false,
     },
     control_flow = {
         enabled = true,
         max_fake_blocks = 6,
     },
     StringToExpressions = {
-        enabled = false,
+        enabled = true,
         min_number_length = 100,
         max_number_length = 999,
     },
     string_encoding = {
-        enabled = false,
+        enabled = true,
     },
     WrapInFunction = {
         enabled = true,
@@ -40,13 +40,13 @@ config.settings = {
         enabled = true,
     },
     function_inlining = {
-        enabled = false,
+        enabled = true,
     },
     dynamic_code = {
-        enabled = false,
+        enabled = true,
     },
     bytecode_encoding = {
-        enabled = false,
+        enabled = true,
     },
     compressor = {
         enabled = true,
